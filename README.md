@@ -16,4 +16,4 @@ It uses a word list (`scrabble_dictionary.txt`) and checks that no letter is use
 ## Notes
 - It doesn't matter if you use lowercase or uppercase letters
 - Each letter is used only as often as it appears in your input
-- No special libraries needed besides `collections.Counter`, which is built into Python
+- Only built-in Python libraries used (`collections.Counter`)
