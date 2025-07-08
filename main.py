@@ -1,30 +1,3 @@
-"""
-Scrabble Word Finder Project
-
-PPOJECT OBJECTIVE:
-Develop a program that takes a letter combination (like "tabind") and creates 
-an alphabetical list of all words from a Scrabble dictionary that can be 
-found with those letters.
-
-PLAN:
-1. Take input: Letter combination (tabind itc.)
-2. Load Scrabble dictionary: List of valid words
-3. Find all possible words: That can be made with the given letters
-4. Display results: Alphabetical list of valid words
-5. Print results
-
-FETURES TO ADD
-- Load real Scrabble dictionary from a file
-- Handle duplicate letters corrctly
-- Sort results alphabetically
-- Count total words found
-
-NOTES:
-- Each letter can be used only as many times as it appears in the input
-- Not case sensitive
-- Need to find dictionary file online
-"""
-
 # Take input/Convert input to lowercase so it doesnt matter how they type it
 letters = input("Enter letters: ").upper()
 
