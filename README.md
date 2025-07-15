@@ -1,19 +1,42 @@
 # Scrabble Word Finder
-A Python script that finds all valid Scrabble words you can make from a set of letters.  
-It uses a word list (`scrabble_dictionary.txt`) and checks that no letter is used more than once unless it appears multiple times in your input.
 
-## What it does
-- Takes your input letters
-- Looks through a big dictionary of Scrabble words
-- Finds all words that can be made with your letters
-- Sorts them alphabetically and tells you how many were found
+This project is a Python script that finds all valid **Scrabble words** you can make from a given set of letters.  
+It uses a pre-loaded dictionary file and ensures that each letter is only used as many times as it appears in your input.
 
-## Files
-- `main.py` — Main Python code
-- `scrabble_dictionary.txt` — Word list (one word per line, all uppercase)
-- You can also replace the dictionary file if you want to use a different word list. Just swap out `scrabble_dictionary.txt`.
+
+## Features
+
+- Accepts any string of letters as input (case-insensitive)
+- Searches a full dictionary of official Scrabble words
+- Filters results based on available letter counts
+- Sorts results alphabetically and displays total word count
+
+
+## How It Works
+
+1. **Input Letters**  
+   The user enters a string of letters (e.g. `TABIND`)
+
+2. **Dictionary Lookup**  
+   The script loads a word list from `scrabble_dictionary.txt`
+
+3. **Validation**  
+   For each word, it checks whether the word can be made using the input letters  
+   (taking letter frequency into account)
+
+4. **Output**  
+   Prints an alphabetically sorted list of valid words  
+   Shows the total number of words found
+
 
 ## Notes
-- It doesn't matter if you use lowercase or uppercase letters
-- Each letter is used only as often as it appears in your input
-- Only built-in Python libraries used (`collections.Counter`)
+
+- Input letters can be lowercase or uppercase - it doesn’t matter
+- Each letter is used only as many times as it appears in the input
+- You can swap in a different word list by replacing `scrabble_dictionary.txt`
+
+
+## Files
+
+`main.py` - Main Python script that handles input and word filtering  
+`scrabble_dictionary.txt` - Text file with one valid Scrabble word per line (all uppercase)
